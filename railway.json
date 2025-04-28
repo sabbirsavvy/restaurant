@@ -1,5 +1,10 @@
 {
   "build": {
-    "dockerfilePath": "Dockerfile"
+    "env": {
+      "COMPOSER_ALLOW_SUPERUSER": "1"
+    }
+  },
+  "deploy": {
+    "startCommand": "apache2-foreground"
   }
 }
